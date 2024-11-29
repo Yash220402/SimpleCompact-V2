@@ -1,0 +1,100 @@
+* {
+	font-family: sans-serif !important;
+	font-size: 10px !important;
+}
+
+:root {
+	--tab-min-height: 20px !important;
+	--focus-outline-color: transparent !important;
+	--urlbar-min-height: max(20px, 1.4em) !important;
+}
+
+#urlbar-container {
+	--urlbar-container-height: 20px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+
+}
+
+#identity-box {
+	display: none !important;
+}
+
+#back-button, #forward-button, #stop-reload-button,
+#unified-extensions-button, #PanelUI-button {
+	display: none !important;
+}
+
+.urlbar-input-container {
+	margin: 0px !important;
+	padding: 0px !important;
+	border: 0px !important;
+}
+
+#star-button-box {
+	display: none !important;
+}
+
+/* Remove teal border when URL bar is focused */
+#urlbar:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove all icons from the URL bar */
+#urlbar .urlbar-icon,
+#urlbar .urlbar-button,
+#urlbar .urlbar-search-button,
+#urlbar .urlbar-search-results-button {
+    display: none !important;
+}
+
+#tracking-protection-icon-container {
+	display: none !important;
+}
+
+#urlbar-input {
+	text-align: center !important;
+}
+
+/* #alltabs-button, .titlebar-buttonbox-container, #tabs-newtab-button, #tabbrowser-arrowscrollbox-periphery {
+	display: none !important;
+} */
+
+/* .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+	max-width: 100vw !important;
+} */
+
+/* =========== TITLEBAR =========== */
+/*.titlebar-buttonbox {  }*/
+.titlebar-buttonbox-container { /* display: none !important; */ }
+
+#titlebar{ appearance: none !important; }
+
+.titlebar-min, .titlebar-restore, .titlebar-max, .titlebar-close {
+	list-style-image: url("./circle-96.png") !important;
+	filter: grayscale(1) !important;
+}
+
+.titlebar-button {
+	transition: all 0.3s ease !important;
+	padding: 0 10px !important;
+	background: none !important;
+}
+.titlebar-button.titlebar-close {
+	padding-right: 14px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+/*	list-style-image: none;*/
+	border-radius: 15px;
+	width: 10px !important;
+	height: 10px !important;
+
+	opacity: 0.6 !important;
+}
+.titlebar-button:hover > .toolbarbutton-icon {
+	opacity: 1 !important;
+}
+
+#tabbrowser-tabs { display: none !important; }
